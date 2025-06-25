@@ -91,26 +91,26 @@ Content-Type: application/json
 – Dönen accessToken’ı Authorization: Bearer <token> header’ında kullanın.
 ```
 Admin → Doktor Yönetimi
-
+```
 GET    /api/admin/doctors               # Tüm doktorlar
 GET    /api/admin/doctors/{idNo}       # TC’ye göre tek doktor
 POST   /api/admin/add/doctors?password=...  
 PUT    /api/admin/doctors/{idNo}
 DELETE /api/admin/doctors/{idNo}
-
+```
 Hasta → Randevu
-
+```
 POST   /api/appointments/book
 GET    /api/appointments/my          # Bekleyen
 GET    /api/appointments/myPast      # Geçmiş
 GET    /api/patients/myIllnesses     # Hastalık geçmişi
-
+```
 Doktor → Randevu & Profil
-
+```
 GET    /api/doctors/me               # Kendi profili
 GET    /api/appointments/mySchedule  # Bugünkü & gelecekteki
 PUT    /api/appointments/updateStatus/{id}
-
+```
 🤝 Katkıda Bulunmak
 Fork’la
 
